@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אלעד מנור - החיים שלי</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+ 
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">אלעד מנור</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">בית</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">מידע</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">צור קשר</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">שלום שמי אלעד</h1>
+      <p class="lead">I'm passionate about [Your Passion/Field]. Welcome to my personal landing page.</p>
+      <a class="btn btn-primary btn-lg" href="#portfolio" role="button">View Portfolio</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>קצת עליי</h2>
+          <p>כמה משפטים עליי: 
+
+            -קוראים לי אלעד מנור, אני בן 23 מחיפה
+            -כיום מתנדב בצה"ל ומתעסק בעוד שני מקצועות בנוסף.
+            -מרצה על אוטיזם מנקודת מבט ראשונה, ואני משתמש בחיים שלי כנקודות דוגמא וחיבור לנושא.
+            -ההרצאה נועדה להפיץ מודעות בנושא, אבל גם לתת דוגמא ומוטיבציה לאנשים אחרים, בין אם על הספקטרום ובין אם לא</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://via.placeholder.com/600x400" alt="Your Photo" class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x300" alt="Project 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of your project.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <form action = '/send_email' method="POST">
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">צרו איתי קשר</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="form-group">
+              <input type="text" id="name" name ='name' class="form-control" placeholder="שם מלא" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-control" placeholder="אימייל" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="תוכן הפניה" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">שלח</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; 2024 אלעד מנור</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
