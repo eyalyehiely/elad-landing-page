@@ -1,8 +1,0 @@
-body {
-    padding-top: 80px; /* Adjust based on your navigation height */
-  }
-  .jumbotron {
-    background-image: url('https://via.placeholder.com/1500x600'); /* Add your image URL here */
-    background-size: cover;
-    color: #fff;
-  }

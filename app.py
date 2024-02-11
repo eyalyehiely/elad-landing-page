@@ -27,17 +27,21 @@ def send_email():
         message = request.form.get('message')
 
         # Create message object
-        msg = Message(subject=f"Hello from {name}, email:{email}",
+        msg = Message(subject=f"You got a new message from {name}, email:{email}",
                       sender=('ההרצאה שלי', 'eyalwork0@gmail.com'),
                       recipients=["eyalwork0@gmail.com"])
         msg.body = message
 
         # Send email
         mail.send(msg)
-        return "Email sent successfully!"
+        return "Email sent successfully! thank you"
     except:
         return "Error, please try again"
 
+
+@app.route('/en')
+def en_web():
+    return render_template('/app_en.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
