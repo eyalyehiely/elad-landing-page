@@ -8,15 +8,15 @@ app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'eyalwork0@gmail.com'
-app.config['MAIL_PASSWORD'] = 'sizr kqmo aymq zeib'
+app.config['MAIL_USERNAME'] = 'manor.elad1@gmail.com'
+app.config['MAIL_PASSWORD'] = 'ubtn fgzf lguy ludg'
 
 mail = Mail(app)
 
 
 @app.route('/')
 def home():
-    return render_template('app.html')
+    return render_template('index.html')
 
 
 @app.route('/send_email', methods=['POST'])
@@ -28,8 +28,8 @@ def send_email():
 
         # Create message object
         msg = Message(subject=f"You got a new message from {name}, email:{email}",
-                      sender=('ההרצאה שלי', 'eyalwork0@gmail.com'),
-                      recipients=["eyalwork0@gmail.com"])
+                      sender=('ההרצאה שלי', 'manor.elad1@gmail.com'),
+                      recipients=["manor.elad1@gmail.com"])
         msg.body = message
 
         # Send email
@@ -38,10 +38,6 @@ def send_email():
     except:
         return "Error, please try again"
 
-
-@app.route('/en')
-def en_web():
-    return render_template('/app_en.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
