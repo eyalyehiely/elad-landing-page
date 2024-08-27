@@ -56,22 +56,24 @@
     <main class="l-main" dir="rtl">
       <!-- ===== HOME ===== -->
       <section class="home bd-grid" id="home">
-  <div class="home__img">
-    <img
-      class="home__image"
-      src="{{ url_for('static', filename='img/climbing_wall.jpg') }}"
-      alt="Climbing Wall"
-    />
-  </div>
-
-  <div class="home__data">
-    <h1 class="home__title">
-      היי 👋<br />כאן אלעד,<br />
-      ובאתי לספר לכם ש..<br />החיים הם קיר טיפוס.
-    </h1>
-    <a href="#contact" class="button">צרו איתי קשר 😄</a>
-  </div>
-</section>
+        <div class="home__img">
+          <img
+            class="home__image"
+            src="{{ url_for('static', filename='img/climbing_wall.jpg') }}"
+            alt="Climbing Wall"
+          />
+        </div>
+        <div>
+          <div class="home__data">
+            <h1 class="home__title">
+              היי 👋<br />כאן אלעד,<br />
+              ובאתי לספר לכם ש..<br />החיים הם קיר טיפוס!
+            </h1>
+          </div>
+        </div>
+      </section>
+      <br />
+      <a href="#contact" class="button">צרו איתי קשר 😄</a>
 
       <!-- ===== ABOUT ===== -->
       <section class="about section" id="about">
@@ -84,6 +86,7 @@
               alt="Elad2"
             />
           </div>
+
           <div dir="rtl">
             <h2>קצת עליי</h2>
             <p>שלום, קוראים לי אלעד ואני בן 23,</p>
