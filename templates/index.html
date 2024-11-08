@@ -65,9 +65,9 @@
           <div>
             <p>יש לכם שאלות או רוצים לשתף פעולה? מלאו את הטופס למטה😄 .</p>
             <form action="/send_email" method="POST">
-              <input type="text" placeholder="השם שלך" required />
-              <input type="email" placeholder="המייל שלך" required />
-              <textarea placeholder="ההודעה שלך" rows="5" required></textarea>
+              <input type="text" name="name" placeholder="השם שלך" required />
+              <input type="email" name="email" placeholder="המייל שלך" required />
+              <textarea name="message" placeholder="ההודעה שלך" rows="5" required></textarea>
               <button type="submit">שלח לי הודעה!</button>
             </form>
           </div>
