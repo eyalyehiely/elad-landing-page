@@ -3,189 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>אלעד מנור - החיים הם קיר טיפוס</title>
-
-    <!-- Link to SCSS file (Note: SCSS needs to be compiled to CSS) -->
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
-
-    <!-- ===== BOX ICONS ===== -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>אלעד מנור</title>
   </head>
-
   <body dir="rtl">
-    <!-- ===== HEADER ===== -->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#home" class="nav__logo">אלעד מנור</a>
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">בית</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">אודות</a>
-            </li>
-            <li class="nav__item">
-              <a href="#presentation" class="nav__link">ההרצאה שלי</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">צור קשר</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
+    <header>
+      <h1>היי 👋 כאן אלעד, ובאתי לספר לכם ש.. החיים הם קיר טיפוס!</h1>
+      <p>המסע שלך מתחיל כאן. גלה עוד בהמשך!</p>
     </header>
 
-    <main class="l-main" dir="rtl">
-      <!-- ===== HOME ===== -->
-      <section class="home bd-grid" id="home">
-        <div class="home__img">
-          <img
-            class="home__image"
-            src="{{ url_for('static', filename='img/climbing_wall.jpg') }}"
-            alt="Climbing Wall"
-          />
+    <nav>
+      <a href="#my-speech">ההרצאה שלי</a>
+      <a href="#about-me">קצת עליי</a>
+      <a href="#contact-us">צור קשר</a>
+    </nav>
+
+    <div class="container">
+      <section id="my-speech">
+        <h2>ההרצאה שלי</h2>
+        <div class="image-placeholder">
+          <img src="static/img/climbing_wall.jpg" alt="Elad in Climbing Wall" />
         </div>
-        <div>
-          <div class="home__data">
-            <h1 class="home__title">
-              היי 👋<br />כאן אלעד,<br />
-              ובאתי לספר לכם ש..<br />החיים הם קיר טיפוס!
-            </h1>
-          </div>
-        </div>
+        <p>
+          ההרצאה שלי היא הדרך שלי לפזר מודעות, הבנה, סבלנות, וידע על הספקטרום
+          האוטיסטי ועל אלה שנמצאים בו. היא מורכבת ממידע יבש, הרבה הומור,
+          אימפרוביזציה, שאלות ותשובות ועוד. המסר המרכזי שלה הוא מוטיבציונלי
+          מטבעו, כדי לתת לאנשים אחרים תחושת מסוגלות להתגבר על הקשיים
+          האינדיבידואליים שלהם, כמו שאני התגברתי (ועודני מתגבר) יום אחרי יום,
+          צעד אחר צעד.
+        </p>
+        <p>
+          ההרצאה מותאמת לכל אדם בכל גיל, מקצוע, מגדר, ודת (מכוונת לאלה שלא על
+          הספקטרום ספציפית, מותאמת אישית לפי הזמנה). היא מעניקה תחושת מסוגלות,
+          כיף, ידע, פרספקטיבה לתחום מעניין בקצה המזלג, ועוד הרבה אחרים.
+        </p>
+        <button>Watch More</button>
       </section>
-      <br />
-      <a href="#contact" class="button">צרו איתי קשר 😄</a>
 
-      <!-- ===== ABOUT ===== -->
-      <section class="about section" id="about">
-        <h2 class="section-title">אודות</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img
-              src="{{ url_for('static', filename='img/elad_pic.jpg') }}"
-              alt="Elad2"
-            />
+      <section id="about-me">
+        <h2>קצת עליי</h2>
+        <div class="about-me">
+          <div class="image-placeholder">
+            <img src="static/img/elad_pic.jpg" alt="Elad pic" />
           </div>
-
-          <div dir="rtl">
-            <h2>קצת עליי</h2>
-            <p>שלום, קוראים לי אלעד ואני בן 23,</p>
-            <p>כיום מתנדב בצה"ל ומדריך טיפוס.</p>
-            <p>אובחנתי על הרצף בגיל 15.</p>
+          <div>
             <p>
-              אני מדבר על האוטיזם מנקודת המבט שלי ועל ההתמודדות היומיומית שלי עם
-              האוטיזם,
+              שלום, קוראים לי אלעד ואני בן 23, כיום מתנדב בצה"ל ומדריך טיפוס.
+              אובחנתי על הרצף בגיל 15. אני מדבר על האוטיזם מנקודת המבט שלי ועל
+              ההתמודדות היומיומית שלי עם האוטיזם. המטרה של ההרצאה היא להעלות את
+              המודעות והכללה, אך גם לתת דוגמא ומוטיבציה לאנשים אחרים, בין אם על
+              הספקטרום ובין אם לא.
             </p>
-            <p>
-              המטרה של ההרצאה - להעלות את המודעות והכללה, אך גם לתת דוגמא
-              ומוטיבציה לאנשים אחרים, בין אם על הספקטרום ובין אם לא .
-            </p>
+            <button>Read More</button>
           </div>
         </div>
       </section>
 
-      <!-- ===== My presentation ===== -->
-      <section class="about section" id="presentation">
-        <h2 class="section-title">ההרצאה שלי</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
+      <section id="contact-us">
+        <h2>צור קשר</h2>
+        <div class="contact-us">
+          <div>
+            <p>יש לכם שאלות או רוצים לשתף פעולה? מלאו את הטופס למטה😄 .</p>
+            <form action="/send_email" method="POST">
+              <input type="text" placeholder="השם שלך" required />
+              <input type="email" placeholder="המייל שלך" required />
+              <textarea placeholder="ההודעה שלך" rows="5" required></textarea>
+              <button type="submit">שלח לי הודעה!</button>
+            </form>
+          </div>
+          <div class="image-placeholder">
             <img
-              src="{{ url_for('static', filename='img/elad_presentation.jpg') }}"
+              src="static/img/elad_presentation.jpg"
               alt="elad_presentation"
             />
           </div>
-          <div>
-            <h2 dir="rtl">ההרצאה שלי</h2>
-            <p>
-              ההרצאה שלי היא הדרך שלי לפזר מודעות, הבנה, סבלנות, וידע על
-              הספקטרום האוטיסטי ועל אלה שנמצאים בו. היא מורכבת ממידע יבש, הרבה
-              הומור, אימפרוביזציה, שאלות ותשובות ועוד. המסר המרכזי שלה הוא
-              מוטיבציונלי מטבעו, כדי לתת לאנשים אחרים תחושת מסוגלות להתגבר על
-              הקשיים האינדיבידואליים שלהם, כמו שאני התגברתי (ועודני מתגבר) יום
-              אחרי יום, צעד אחר צעד. ההרצאה מותאמת לכל אדם בכל גיל, מקצוע, מגדר,
-              ודת (מכוונת לאלה שלא על הספקטרום ספציפית, מותאמת אישית לפי הזמנה).
-              היא מעניקה תחושת מסוגלות, כיף, ידע, פרספקטיבה לתחום מעניין בקצה
-              המזלג, ועוד הרבה אחרים.
-            </p>
-          </div>
         </div>
       </section>
+    </div>
 
-      <!-- ===== CONTACT ===== -->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">להזמנת הרצאות ולפרטים נוספים ⬇️</h2>
-
-        <div class="contact__container bd-grid">
-          <form action="/send_email" method="POST" class="contact__form">
-            <input
-              type="text"
-              name="name"
-              placeholder="השם שלך*"
-              class="contact__input"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="המייל שלך*"
-              class="contact__input"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="ההודעה שלך*"
-              class="contact__input"
-              required
-            ></textarea>
-            <button type="submit" class="button">שלח לי הודעה 😄</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-      <p class="footer__title">אלעד מנור</p>
-      <div class="footer__social">
-        <a
-          href="tel:+972548163607"
-          class="footer__icon"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-phone"></i
-        ></a>
-      </div>
-      <p class="lead">
-        ".האוטיזם הוא חלק ממני, אך הוא לא מגדיר את מי שאני. במקום להילחם נגדו,
+    <footer>
+      <p>
+        "האוטיזם הוא חלק ממני, אך הוא לא מגדיר את מי שאני. במקום להילחם נגדו,
         אני מבין שיש לי את הכוח להשפיע ולהתקדם בחיי"
       </p>
     </footer>
-
-    <!-- ===== SCROLL REVEAL ===== -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ===== MAIN JS ===== -->
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <footer>&copy; החיים הם לא קיר טיפוס. כל הזכויות שמורות לאלעד מנור</footer>
   </body>
 </html>
